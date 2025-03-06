@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="js/index.js" defer></script>
     <!-- Meta Stuff -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,39 +22,49 @@
 <body>
     <main>
         <div class="container-outer">
+
+            <div class="item">
+                <input type="radio" id="preventMonocolor" name="colorOption" value="prevent" checked>
+                <label for="preventMonocolor">Prevent Monocolor</label><br>
+                <input type="radio" id="allowMonocolor" name="colorOption" value="allow">
+                <label for="allowMonocolor">Allow Monocolor</label><br>
+                <input type="radio" id="enforceMonocolor" name="colorOption" value="enforce">
+                <label for="enforceMonocolor">Enforce Monocolor</label>
+            </div>
+            
+            <div class="item">
+                <button onclick="randomizeAllDecks()">Randomize All Decks</button>
+            </div>
+
             <div class="container-inner">
-                <div class="item">
-
-
-                    <div class="input-group">
-                        <input required="" type="text" name="text" autocomplete="off" class="input">
-                        <label class="user-label">First Name</label>
-                    </div>
-
-
-
+                <div class="container-inner">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Player 1</label>
                 </div>
-                <div class="item">
-                    <input type="text" value="<Deck>" readonly>
-                    <button>Random</button class="item">
+                <div class="item">    
+                    <input name="pick" type="text" id="p1d1" readonly>
+                    <button onclick="randomizeDeckPick(1, 'p1d1')">Randomize</button>
                 </div>
-                <div class="item">
-                    <input type="text" value="<Deck>" readonly>
-                    <button>Random</button class="item">
+                <div class="item">    
+                    <input name="pick" type="text" id="p1d2" readonly>
+                    <button onclick="randomizeDeckPick(1, 'p1d2')">Randomize</button>
                 </div>
             </div>
+
             <div class="container-inner">
-                <div class="item">
-                    <input type="text" id="player1name" name="player1name" value="Player1" size="10"><br>
+                <div class="container-inner">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Player 2</label>
                 </div>
-                <div class="item">
-                    <input type="text" value="<Deck>" readonly>
-                    <button>Random</button class="item">
+                <div class="item">    
+                    <input name="pick" type="text" id="p2d1" readonly>
+                    <button onclick="randomizeDeckPick(2, 'p2d1')">Randomize</button>
                 </div>
-                <div class="item">
-                    <input type="text" value="<Deck>" readonly>
-                    <button>Random</button class="item">
+                <div class="item">    
+                    <input name="pick" type="text" id="p2d2" readonly>
+                    <button onclick="randomizeDeckPick(2, 'p2d2')">Randomize</button>
                 </div>
             </div>
+
     </main>
 </body>
