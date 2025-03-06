@@ -2,13 +2,95 @@
 // Randomize all, clear all
 // Randomize P1 D1, P1 D2, P2 D1, P2 D2
 
-let defaultColors = ["blue", "green", "red", "black", "white"];
+let defaultColors = ["Blue", "Green", "Red", "Black", "White"];
 let defaultDecks = {
-  blue: ["d1", "d2", "d3"],
-  green: ["d4", "d5"],
-  red: ["d6", "d7", "d8"],
-  black: ["d9", "d10", "d11"],
-  white: ["d12", "d13"],
+  Blue: [
+    "Above the Clouds (4) - JS20",
+    "Archaeology (4) - JS20",
+    "Bookworms (2) - JS25",
+    "Detective (4) - JS22",
+    "Faeries (2) - JS22",
+    "Inventive (1) - JS22",
+    "Inventive (2) - JS25",
+    "Pirates - FDN",
+    "Soaring (1) - JS25",
+    "Soaring (4) - JS25",
+    "Spirits (1) - JS20",
+    "Under the Sea (1) - JS20",
+    "Well-Read (1) - JS20",
+    "Wizards (1) - JS20",
+    "Wizards (1) - JS25",
+    "Wizards - FDN"
+  ],
+  Green: [
+    "Dinner - JS25",
+    "Dinosaurs (3) - JS20",
+    "Elves - FDN",
+    "Elves (4) - JS22",
+    "Elves (4) - JS25",
+    "Explorers (4) - JS25",
+    "Insects (1) - JS22",
+    "Gigantic (1) - JS22",
+    "Landfall (2) - JS25",
+    "Landfall (4) - JS25",
+    "Plus One (1) - JS20",
+    "Primal - FDN",
+    "Multi-Headed (1) - JS22",
+    "Tree-Hugging (2) - JS20",
+    "Tree-Hugging (3) - JS20",
+    "Walls - JS20"
+  ],
+  Red: [
+    "Chandra - JS20",
+    "Devilish (3) - JS20",
+    "Experimental (2) - JS22",
+    "Fiery (1) - JS22",
+    "Goblins (1) - JS20",
+    "Goblins (4) - JS22",
+    "Goblins - FDN",
+    "Inferno - FDN",
+    "Raid (1) - JS22",
+    "Smashing (3) - JS20",
+    "Spellcasting (2) - JS20",
+    "Zealots (2) - JS25",
+    "Zealots (3) - JS25"
+  ],
+  Black: [
+    "Boneyard (2) - JS22", 
+    "Clerics (2) - JS25",
+    "Clerics (4) - JS25",
+    "Discarding (2) - JS20",
+    "Ghastly (3) - JS25",
+    "Gross (1) - JS22",
+    "Icky (2) - JS25",
+    "Liliana - JS20",
+    "Morbid (1) - JS22",
+    "Minions (1) - JS20",
+    "Ne'er-Do-Wells (2) - JS25",
+    "Undead - FDN",
+    "Vampires (3) - JS25",
+    "Witchcraft (2) - JS20",
+    "Zombies (1) - JS22",
+    "Zombies (3) - JS22"
+  ],
+  White: [
+    "Angels (2) - JS25",
+    "Armed (3) - JS25",
+    "Blink (1) - JS22",
+    "Cats (2) - JS22",
+    "Constellation (1) - JS22",
+    "Enchanted (1) - JS25",
+    "Enchanted (2) - JS25",
+    "Feathered Friends (1) - JS20",
+    "Giddyap - JS25",
+    "Healing - FDN",
+    "Heavily Armored (2) - JS20",
+    "Holy (3) - JS22",
+    "Holy (4) - JS22",
+    "Legion (4) - JS20",
+    "Stalwart (1) - JS25",
+    "Teamwork (1) - JS22"
+  ],
 };
 
 // Radio buttons:
